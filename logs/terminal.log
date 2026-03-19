@@ -1,0 +1,102 @@
+[2026-03-18 00:24:53] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 00:25:04] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 00:25:14] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 00:27:01] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:46:57] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:46:57] [CRITICAL] [src.fetchers.prices] [src.fetchers.prices] Unexpected error for Gold: '>' not supported between instances of 'MagicMock' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\jeeva\Desktop\finnace indedicator\src\fetchers\prices.py", line 86, in fetch_price
+    raw = _call_yf_api(symbol, ticker)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeeva\Desktop\finnace indedicator\src\utils\retry.py", line 31, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeeva\Desktop\finnace indedicator\src\utils\rate_limiter.py", line 36, in wrapper
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeeva\Desktop\finnace indedicator\src\fetchers\prices.py", line 52, in _call_yf_api
+    if current_price and prev_close and prev_close > 0:
+                                        ^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'MagicMock' and 'int'
+[2026-03-18 19:46:57] [CRITICAL] [src.fetchers.prices] [src.fetchers.prices] DB fallback failed for Gold: 'str' object has no attribute 'isoformat'
+[2026-03-18 19:46:58] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:46:58] [ERROR] [src.fetchers.prices] [src.fetchers.prices] Network error for Silver: Mocked network error
+[2026-03-18 19:46:58] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:46:58] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:46:58] [INFO] [utils.nse_session] [NSE Session] Initializing new NSE Session to acquire cookies...
+[2026-03-18 19:47:03] [CRITICAL] [src.fetchers.options_chain] [src.fetchers.options_chain] Unexpected error for NIFTY: No expiry dates found in NSE response
+Traceback (most recent call last):
+  File "C:\Users\jeeva\Desktop\finnace indedicator\src\fetchers\options_chain.py", line 70, in fetch_options_chain
+    raise ValueError("No expiry dates found in NSE response")
+ValueError: No expiry dates found in NSE response
+[2026-03-18 19:47:30] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:47:30] [CRITICAL] [src.fetchers.prices] [src.fetchers.prices] Unexpected error for Gold: '>' not supported between instances of 'MagicMock' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\jeeva\Desktop\finnace indedicator\src\fetchers\prices.py", line 86, in fetch_price
+    raw = _call_yf_api(symbol, ticker)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeeva\Desktop\finnace indedicator\src\utils\retry.py", line 31, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeeva\Desktop\finnace indedicator\src\utils\rate_limiter.py", line 36, in wrapper
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeeva\Desktop\finnace indedicator\src\fetchers\prices.py", line 52, in _call_yf_api
+    if current_price and prev_close and prev_close > 0:
+                                        ^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'MagicMock' and 'int'
+[2026-03-18 19:47:31] [WARNING] [src.fetchers.prices] [src.fetchers.prices] Serving stale data for Gold
+[2026-03-18 19:47:31] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:47:31] [ERROR] [src.fetchers.prices] [src.fetchers.prices] Network error for Silver: Mocked network error
+[2026-03-18 19:47:31] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:47:31] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:47:31] [INFO] [utils.nse_session] [NSE Session] Initializing new NSE Session to acquire cookies...
+[2026-03-18 19:47:33] [CRITICAL] [src.fetchers.options_chain] [src.fetchers.options_chain] Unexpected error for NIFTY: No expiry dates found in NSE response
+Traceback (most recent call last):
+  File "C:\Users\jeeva\Desktop\finnace indedicator\src\fetchers\options_chain.py", line 70, in fetch_options_chain
+    raise ValueError("No expiry dates found in NSE response")
+ValueError: No expiry dates found in NSE response
+[2026-03-18 19:48:01] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:48:01] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:48:01] [ERROR] [src.fetchers.prices] [src.fetchers.prices] Network error for Silver: Mocked network error
+[2026-03-18 19:48:01] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:48:01] [INFO] [src.storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-18 19:48:01] [INFO] [utils.nse_session] [NSE Session] Initializing new NSE Session to acquire cookies...
+[2026-03-18 19:48:03] [CRITICAL] [src.fetchers.options_chain] [src.fetchers.options_chain] Unexpected error for NIFTY: No expiry dates found in NSE response
+Traceback (most recent call last):
+  File "C:\Users\jeeva\Desktop\finnace indedicator\src\fetchers\options_chain.py", line 70, in fetch_options_chain
+    raise ValueError("No expiry dates found in NSE response")
+ValueError: No expiry dates found in NSE response
+[2026-03-18 19:54:15] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:23:28] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:28:04] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:28:15] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:28:35] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:29:24] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:29:41] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:32:28] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:40:38] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:40:43] [INFO] [fetchers.prices] [fetchers.prices] USD/INR rate fetched: 93.0790023803711
+[2026-03-19 16:40:52] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:41:16] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:41:30] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:42:16] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:44:16] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:44:21] [INFO] [fetchers.prices] [fetchers.prices] USD/INR rate fetched: 93.08399963378906
+[2026-03-19 16:48:40] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:49:22] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:49:25] [INFO] [fetchers.prices] [fetchers.prices] USD/INR rate fetched: 93.08399963378906
+[2026-03-19 16:49:45] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:55:48] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:56:11] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:56:42] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:56:43] [WARNING] [fetchers.prices] [fetchers.prices] Symbol silver not found in config/assets.py maps
+[2026-03-19 16:56:52] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:56:55] [INFO] [fetchers.prices] [fetchers.prices] USD/INR rate fetched: 93.08100128173828
+[2026-03-19 16:58:15] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:58:33] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 16:58:34] [WARNING] [fetchers.prices] [fetchers.prices] Symbol Cooper not found in config/assets.py maps
+[2026-03-19 22:30:07] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 22:30:08] [INFO] [fetchers.prices] [fetchers.prices] USD/INR rate fetched: 93.09100341796875
+[2026-03-19 22:32:34] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db
+[2026-03-19 22:35:41] [INFO] [storage.db] Database successfully initialized at C:\Users\jeeva\Desktop\finnace indedicator\data\terminal.db

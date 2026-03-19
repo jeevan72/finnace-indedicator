@@ -32,8 +32,6 @@ if this_python < min_version:
     ]
     print("ERROR: " + " ".join(message_parts))
     sys.exit(1)
-
-
 import os.path
 import pkgutil
 import shutil

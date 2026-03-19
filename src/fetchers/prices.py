@@ -182,3 +182,38 @@ def _fallback_from_db(symbol: str) -> Optional[dict]:
     except Exception as e:
         logger.critical(f"[{__name__}] DB fallback failed for {symbol}: {e}")
         return None
+
+
+# ──────────────────────── Async Batch Fetching ────────────────────────
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
+
+# Shared thread pool for running sync yfinance calls in async context
+_executor = ThreadPoolExecutor(max_workers=5)
+
+
+async def fetch_price_async(symbol: str) -> Optional[dict]:
+    """Async wrapper around sync fetch_price using a thread pool."""
+    loop = asyncio.get_event_loop()
+    return await loop.run_in_executor(_executor, fetch_price, symbol)
+
+
+async def fetch_all_prices(symbols: list) -> list:
+    """
+    Fetch multiple assets concurrently. 
+    Up to 5 assets at once using ThreadPoolExecutor.
+    Returns list of results (dict or None for failures).
+    """
+    tasks = [fetch_price_async(sym) for sym in symbols]
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+    
+    processed = []
+    for sym, result in zip(symbols, results):
+        if isinstance(result, Exception):
+            logger.error(f"[{__name__}] Async fetch failed for {sym}: {result}")
+            processed.append(None)
+        else:
+            processed.append(result)
+    
+    return processed
+

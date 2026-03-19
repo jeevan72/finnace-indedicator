@@ -17,3 +17,8 @@ plotly
 pytest
 pytest-mock
 tenacity
+fastapi
+uvicorn[standard]
+pydantic
+redis
+websockets
